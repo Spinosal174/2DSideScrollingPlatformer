@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.198844,
   "name":"PowerupSFX",
   "parent":{
     "name":"Sounds",
