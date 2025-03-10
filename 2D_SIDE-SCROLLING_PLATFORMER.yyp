@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"2D_SIDE-SCROLLING_PLATFORMER",
   "resources":[
@@ -40,6 +40,7 @@
     {"id":{"name":"obj_cavebck","path":"objects/obj_cavebck/obj_cavebck.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_endgame","path":"objects/obj_endgame/obj_endgame.yy",},},
+    {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_hud_coins","path":"objects/obj_hud_coins/obj_hud_coins.yy",},},
     {"id":{"name":"obj_label_BeginingText","path":"objects/obj_label_BeginingText/obj_label_BeginingText.yy",},},
@@ -59,6 +60,9 @@
     {"id":{"name":"spr_coin_hud","path":"sprites/spr_coin_hud/spr_coin_hud.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_endgame","path":"sprites/spr_endgame/spr_endgame.yy",},},
+    {"id":{"name":"spr_enemy1_idle","path":"sprites/spr_enemy1_idle/spr_enemy1_idle.yy",},},
+    {"id":{"name":"spr_enemy1_jump","path":"sprites/spr_enemy1_jump/spr_enemy1_jump.yy",},},
+    {"id":{"name":"spr_enemy1_walk","path":"sprites/spr_enemy1_walk/spr_enemy1_walk.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
