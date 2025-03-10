@@ -55,6 +55,7 @@
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"start_menu","path":"rooms/start_menu/start_menu.yy",},},
+    {"id":{"name":"PowerupSFX","path":"sounds/PowerupSFX/PowerupSFX.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_cavebck","path":"sprites/spr_cavebck/spr_cavebck.yy",},},
     {"id":{"name":"spr_coin_hud","path":"sprites/spr_coin_hud/spr_coin_hud.yy",},},
