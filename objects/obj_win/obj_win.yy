@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_win",
+  "eventList":[],
   "managed":true,
-  "name":"obj_button",
+  "name":"obj_win",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button",
-    "path":"sprites/spr_button/spr_button.yy",
+    "name":"spr_win",
+    "path":"sprites/spr_win/spr_win.yy",
   },
   "spriteMaskId":null,
   "visible":true,
