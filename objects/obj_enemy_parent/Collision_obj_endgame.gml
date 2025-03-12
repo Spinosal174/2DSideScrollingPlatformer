@@ -1,6 +1,4 @@
-/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
-/// @DnDHash : 6D8B03A1
-/// @DnDArgument : "room" "start_menu"
-/// @DnDSaveInfo : "room" "start_menu"
-room_goto(start_menu);
+/// @DnDHash : 667F3541
+instance_destroy();

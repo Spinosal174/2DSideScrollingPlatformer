@@ -1,12 +1,5 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 14D5B3E2
-/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles")"
-/// @DnDArgument : "var" "collision_tilemap "
-collision_tilemap  = layer_tilemap_get_id("Tiles");
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 47860B89
 /// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left$(13_10)0 would be no input
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
@@ -34,7 +27,10 @@ show_debug_message(string(move_x));
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "object" "collision_tilemap"
-var l785AF0C1_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l785AF0C1_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+var l785AF0C1_0 = instance_place(x + 0, y + 2, [collision_tilemap]);
+if ((l785AF0C1_0 > 0))
+{
+	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 56437D2E
 	/// @DnDComment : Reset the falling speed$(13_10)on movement y$(13_10)when you landed on ground
@@ -46,20 +42,28 @@ var l785AF0C1_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l785AF
 	/// @DnDVersion : 1
 	/// @DnDHash : 1442041A
 	/// @DnDParent : 785AF0C1
-	var l1442041A_0;l1442041A_0 = keyboard_check_pressed(vk_space);if (l1442041A_0){	/// @DnDAction : YoYo Games.Common.Variable
+	var l1442041A_0;
+	l1442041A_0 = keyboard_check_pressed(vk_space);
+	if (l1442041A_0)
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 2BD61F0D
 		/// @DnDComment : Jump
 		/// @DnDParent : 1442041A
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
-		move_y = -jump_speed;}}
+		move_y = -jump_speed;
+	}
+}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
 /// @DnDHash : 397FEAD0
 /// @DnDComment : If you're not$(13_10)on the ground
-else{	/// @DnDAction : YoYo Games.Common.If_Variable
+else
+{
+	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 6C1C3339
 	/// @DnDComment : If we are$(13_10)falling after$(13_10)a jump
@@ -67,7 +71,9 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDArgument : "var" "move_y"
 	/// @DnDArgument : "op" "1"
 	/// @DnDArgument : "value" "10"
-	if(move_y < 10){	/// @DnDAction : YoYo Games.Common.Variable
+	if(move_y < 10)
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 6CDF0343
 		/// @DnDComment : Add gravity
@@ -75,7 +81,9 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDArgument : "expr" "1"
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "move_y"
-		move_y += 1;}}
+		move_y += 1;
+	}
+}
 
 /// @DnDAction : YoYo Games.Movement.move_and_collide
 /// @DnDVersion : 1

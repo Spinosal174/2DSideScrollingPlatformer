@@ -1,25 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 14D5B3E2
-/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles")"
-/// @DnDArgument : "var" "collision_tilemap "
-collision_tilemap  = layer_tilemap_get_id("Tiles");
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 47860B89
 /// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left$(13_10)0 would be no input
 /// @DnDDisabled : 1
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
 
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 28A03988
-/// @DnDArgument : "expr" "move_x * walk_speed"
-/// @DnDArgument : "var" "move_x"
-move_x = move_x * walk_speed;
 
 /// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 /// @DnDVersion : 1
@@ -75,8 +61,9 @@ if ((l785AF0C1_0 > 0))
 	/// @DnDArgument : "x" "x + (30 * sign(move_x))"
 	/// @DnDArgument : "y" "y + 50"
 	/// @DnDArgument : "object" "collision_tilemap"
+	/// @DnDArgument : "not" "1"
 	var l007F8302_0 = instance_place(x + (30 * sign(move_x)), y + 50, [collision_tilemap]);
-	if ((l007F8302_0 > 0))
+	if (!(l007F8302_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
