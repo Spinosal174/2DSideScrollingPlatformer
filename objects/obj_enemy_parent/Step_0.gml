@@ -46,7 +46,7 @@ if ((l785AF0C1_0 > 0))
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 2BD61F0D
-		/// @DnDComment : Jump
+		/// @DnDComment : Jump over wall
 		/// @DnDParent : 4C74F947
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
@@ -67,12 +67,21 @@ if ((l785AF0C1_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
+		/// @DnDHash : 6364FC3E
+		/// @DnDComment : Reverse Movement
+		/// @DnDParent : 007F8302
+		/// @DnDArgument : "expr" "move_x * -1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x * -1;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
 		/// @DnDHash : 7868B011
-		/// @DnDComment : Jump
+		/// @DnDComment : Jump / purposely Disabled
+		/// @DnDDisabled : 1
 		/// @DnDParent : 007F8302
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
-		move_y = -jump_speed;
 	}
 
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
